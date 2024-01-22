@@ -1,0 +1,25 @@
+table, th, td {
+    outline: 6px solid rgb(15, 87, 97);
+    border: 2px solid rgb(15, 87, 97);
+    border-collapse: collapse;  
+    /* specify hover color; */
+    background-color: #d3d32d; 
+
+  }
+
+#customers td, #customers th {
+    border: 2px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: b;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
