@@ -5,56 +5,69 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Nicer Table</title>
         <style>
+            h1{
+                text-align: center;
+                color: red;
+            }
             table {
-                border: 3px solid magenta;
+                margin: auto;
+               text-align: center;
+                background-color: brown;
+                border: 5px solid purple;
                 border-collapse: collapse;
             }
-            td,th{
-                border: 2px solid red;
+            th,td{
+                font-size: 25px;
+                text-align: center;
+                border: 3px solid white; 
             }
+           
+            table caption{
+                color: rgb(77, 230, 77);
+                font-size: 20px;
+            }
+   hr{
+    height: 10px;
+    background-color: green;
+    border-radius: 10px;
 
+   }
+   p{
+    text-align: center;
+    font-size: 25px;
+    color: brown;
+
+    font-weight: bold;
+   }
            
         </style>
     </head>
     <body>
+        <h1> My Colourful Table</h1>
+        <hr>
         <table>
+           <caption>My General Table</caption>
             <thead>
                 <th>Name</th>
                 <th>Age</th>
-                <th>Department</th>
+                <th>Class</th>
             </thead>
             <tbody>
                 <tr>
-                    <td>Felicity</td>
-                    <td>21</td>
-                    <td>Stastics</td>
+                    <td>Olivia</td>
+                    <td>23</td>
+                    <td>Cs3</td>
                 </tr>
                 <tr>
-                    <td>Rendolf</td>
-                    <td>54</td>
-                    <td>Computer Science</td>
+                    <td>James</td>
+                    <td>20</td>
+                    <td>CS1 </td>
                 </tr>
-                <tr>
-                    <td>Kaus Ralf</td>
-                    <td>67</td>
-                    <td>Real Estate</td>
-                </tr>
-                <tr>
-                    <td>Felicity</td>
-                    <td>21</td>
-                    <td>Stastics</td>
-                </tr>
-                <tr>
-                    <td>Rendolf</td>
-                    <td>54</td>
-                    <td>Computer Science</td>
-                </tr>
-                <tr>
-                    <td>Kaus Ralf</td>
-                    <td>67</td>
-                    <td>Real Estate</td>
-                </tr>
+               
+              
             </tbody>
         </table>
+
+        <p>NEXT ITEM</p>
     </body>
 </html>

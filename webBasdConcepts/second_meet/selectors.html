@@ -2,35 +2,93 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selectors</title>
-    <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selectors</title>
+        <style>
 
         
         ul li {
             color: blue;
         }
     </style>
-</head>
-        <!--comma allows us to edit mutiple elements applyin the same formatting to them-->
-<!--
+    </head>
+    <!--comma allows us to edit mutiple elements applyin the same formatting to them-->
+    <!--
 the space deals with the descendants. the code below helps us to edit the
 li which is the descendant of the ul-->
-<body>
-    <h1>This is a selector work</h1>
-    <ol>
-        <li>Banana</li>
-        <li>Apple</li>
-        <li>Pineaple</li>
-        <ul>
-            <li>Cabbage</li>
-            <li>Carrot</li>
-            <li>Cucumber</li>
-        </ul>
+    <body>
+        <h1>This is a selector work</h1>
+        <ol>
+            <li>Banana</li>
+            <li>Apple</li>
+            <li>Pineaple</li>
+            <ul>
+                <li>Cabbage</li>
+                <li>Carrot</li>
+                <li>Cucumber</li>
+            </ul>
 
-        <li>Sheliop</li>
-    </ol>
-</body>
+            <li>Sheliop</li>
+        </ol>
+
+        <br /><br />
+        A table
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Colour</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Gilbert</td>
+                    <td>Male</td>
+                    <td>Red</td>
+                </tr>
+                <tr>
+                    <td>Success</td>
+                    <td>Female</td>
+                    <td>Green</td>
+                </tr>
+                <tr>
+                    <td>Juliet</td>
+                    <td>Female</td>
+                    <td>Purple</td>
+                </tr>
+            </tbody>
+        </table>
+
+        
+        <form>
+            <input type="text" placeholder="First Name" name="first">
+            <input type="password" placeholder="Password" >
+            <br />
+
+            <!--Using radio buttons-->
+
+            Favourite Colour:
+            <input name="color" type="radio" value="blue">Blue
+            <input name="jk" type="radio" value="green">Green
+            <input name="color" type="radio" value="yellow">Yellow
+            <input name="color" type="radio" value="pink">Pink
+            <br />
+            <!--Using checkboxes-->
+
+            Fruits you likes (select all that apply) <br />
+            <input name="fruit" type="checkbox" value="Apple">Apple
+            <input name="fruit" type="checkbox" value="Banana">Banana
+            <input name="fruit" type="checkbox" value="Pear">Pear
+            <input name="fruit" type="checkbox"
+                value="Strawberry">Strawberry
+            <input name="fruit" type="checkbox" value="Pawpaw">Pawpaw
+         
+            <br />
+            <input type="Submit">
+            <input type="Reset">
+            <input name="text" type="radio" value="Apleio">rentop
+
+        </form>
+    </body>
 </html>
