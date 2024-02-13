@@ -1,0 +1,90 @@
+body {
+    background-color: #f8e2e2; /* Light pink */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .heart-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .heart {
+    width: 100px;
+    height: 90px;
+    background: linear-gradient(-45deg, #ff6b6b, #ff9e9e);
+    position: relative;
+    transform: rotate(-45deg);
+    animation: heartbeat 1.5s infinite;
+  }
+  
+  .heart::before,
+  .heart::after {
+    content: '';
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(-45deg, #ff6b6b, #ff9e9e);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50px;
+  }
+  
+  .heart::after {
+    left: 0;
+  }
+  
+  @keyframes heartbeat {
+    from {
+      transform: scale(0.75);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  .name {
+    font-size: 20px;
+    color: #ff4d4d; /* Red */
+    animation: bounce 1s ease infinite alternate;
+  }
+  
+  @keyframes bounce {
+    from {
+      transform: translateY(-5px);
+    }
+    to {
+      transform: translateY(5px);
+    }
+  }
+  
