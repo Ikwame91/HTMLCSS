@@ -63,7 +63,46 @@ body {
   .heart::after {
     left: 0;
   }
-  
+  /* Existing CSS styles */
+
+/* New styles for bubble and balloon effects */
+.reaction.bubble, .reaction.balloon {
+  border-radius: 50%; /* Make the reaction round */
+  width: 100px;
+  height: 100px;
+  line-height: 100px; /* Center the text vertically */
+  text-align: center; /* Center the text horizontally */
+}
+
+.reaction.bubble::after, .reaction.balloon::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+.reaction.bubble::after {
+  border-top: 10px solid rgba(255, 77, 77, 0.7); /* Red with transparency */
+  bottom: 0; /* Position the triangle at the bottom */
+}
+
+.reaction.balloon::after {
+  border-bottom: 10px solid rgba(102, 204, 255, 0.7); /* Blue with transparency */
+  top: 0; /* Position the triangle at the top */
+}
+
+/* New animation for fade-out effect */
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
   @keyframes heartbeat {
     from {
       transform: scale(0.75);
