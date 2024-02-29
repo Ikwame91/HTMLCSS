@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Using Selectors</title>
+        <style>
+      ol li a {
+        color: green;
+      }
+      ul li {
+        color: blue;
+      }
+      a[href="https://www.amazon.com/"]
+      {
+        color: red;
+      }
+    </style>
+    </head>
+    <body>
+        <ol>
+            <li><a href="https://www.google.com/">Google</a></li>
+            <li><a href="https://www.amazon.com/">Amazon</a></li>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+        </ol>
+        <ol>
+            <li>foo</li>
+            <li>
+                bar
+                <ul>
+                    <li>hello</li>
+                    <li>goodbye</li>
+                    <li>hello</li>
+                </ul>
+            </li>
+            <li>baz</li>
+        </ol>
+    </body>
+    <html></html>
+</html>
